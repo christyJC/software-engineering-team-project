@@ -16,9 +16,9 @@ game that will be created.
 3.
 
 ## Levels
-1.
-2.
-3.
+1. Player shall be able to navigate through the course at a steady pace. 
+2. Player shall be able to find objects easily around the map. 
+3. Player shall not be stuck on blocks of the level map. 
 
 ## Main Menu
 1. The main menu shall allow the player to start the game.
@@ -48,9 +48,9 @@ game that will be created.
 3.
 
 ## Levels
-1.
-2.
-3.
+1. The background shall fit onto the screen correctly on the laptop. 
+2. The map details shall fit with the theme of that level.  
+3. Map shall not have any exploits to fall off the map randomly unless intentional. 
 
 ## Menus
 1. All menus shall be easy to navigate with the arrow keys or WASD.
