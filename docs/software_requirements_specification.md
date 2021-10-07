@@ -6,9 +6,9 @@ game that will be created.
 # Functional
 
 ## Player
-1.
-2.
-3.
+1. The player character shall be able to move left and right.
+2. The player character shall be able to jump.
+3. The player character shall be able to shoot.
 
 ## Inventory
 1.
@@ -38,9 +38,9 @@ game that will be created.
 # Non-functional
 
 ## Player
-1.
-2.
-3.
+1. The player character controls shall feel smooth.
+2. The player character shall be able to move without becoming stuck.
+3. The player character shall be able to interact with items without problems.
 
 ## Inventory
 1.
