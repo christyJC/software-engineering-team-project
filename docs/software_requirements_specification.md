@@ -11,9 +11,9 @@ game that will be created.
 3. The player character shall be able to shoot.
 
 ## Inventory
-1.
-2.
-3.
+1. Player needs to be able to look at the inventory that they currently have and they need to be able to interact with it
+2. Inventory needs to be able to hold and store items. Collecting an item should go right into the inventory.
+3. Items need to be used for what their function is.
 
 ## Levels
 1. Player shall be able to navigate through the course at a steady pace. 
@@ -43,9 +43,9 @@ game that will be created.
 3. The player character shall be able to interact with items without problems.
 
 ## Inventory
-1.
-2.
-3.
+1. Once items are used, they will be discarded as they can only be used once
+2. Inventory will act as a storage for items that can be collected, used or discarded. It will have spots where each thing can go
+3. Items will give buffs to the player whether its extra movement speed or extra health.
 
 ## Levels
 1. The background shall fit onto the screen correctly on the laptop. 
