@@ -21,6 +21,7 @@ _global_script_class_icons={
 [application]
 
 config/name="Team Project"
+run/main_scene="res://source/StartMenu.tscn"
 config/icon="res://icon.png"
 
 [input]
