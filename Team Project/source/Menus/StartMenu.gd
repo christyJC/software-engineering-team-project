@@ -5,7 +5,7 @@
 extends MarginContainer
 
 const gameStart = preload("res://source/Levels/LevelTemplate.tscn")
-const optionsMenu = preload("res://source/OptionsMenu.tscn")
+const optionsMenu = preload("res://source/Menus/OptionsMenu.tscn")
 
 onready var selectorStart = $CenterContainer/VBoxContainer/StartGame/VBoxContainer/CenterContainer/HBoxContainer/Selector
 onready var selectorOptions = $CenterContainer/VBoxContainer/Options/VBoxContainer/CenterContainer/HBoxContainer/Selector
