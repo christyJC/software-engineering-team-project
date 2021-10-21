@@ -15,4 +15,5 @@ Discussion points:
 * Talking about the presentation
 
 Goals for next week (include responsibilities)
-*
+* Prepare for presentation
+* Start on tasks
