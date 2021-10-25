@@ -54,31 +54,29 @@ margin_right = 1024.0
 margin_bottom = 600.0
 
 [node name="VBoxContainer" type="VBoxContainer" parent="CenterContainer"]
-margin_left = 44.0
-margin_top = 138.0
-margin_right = 980.0
-margin_bottom = 462.0
+margin_left = 278.0
+margin_top = 187.0
+margin_right = 746.0
+margin_bottom = 413.0
 
 [node name="CenterContainer" type="CenterContainer" parent="CenterContainer/VBoxContainer"]
-margin_right = 936.0
-margin_bottom = 193.0
+margin_right = 468.0
+margin_bottom = 95.0
 
 [node name="TitleLabel" type="Label" parent="CenterContainer/VBoxContainer/CenterContainer"]
-margin_right = 936.0
-margin_bottom = 193.0
+margin_right = 468.0
+margin_bottom = 95.0
 custom_fonts/font = SubResource( 1 )
-text = "johnny appleseed's
-Big adventure"
-align = 1
+text = "Game Name"
 
 [node name="StartGame" type="CenterContainer" parent="CenterContainer/VBoxContainer"]
-margin_top = 197.0
-margin_right = 936.0
-margin_bottom = 240.0
+margin_top = 99.0
+margin_right = 468.0
+margin_bottom = 142.0
 
 [node name="VBoxContainer" type="VBoxContainer" parent="CenterContainer/VBoxContainer/StartGame"]
-margin_left = 362.0
-margin_right = 574.0
+margin_left = 128.0
+margin_right = 340.0
 margin_bottom = 43.0
 
 [node name="CenterContainer" type="CenterContainer" parent="CenterContainer/VBoxContainer/StartGame/VBoxContainer"]
@@ -106,13 +104,13 @@ custom_fonts/font = SubResource( 3 )
 text = "Start"
 
 [node name="Options" type="CenterContainer" parent="CenterContainer/VBoxContainer"]
-margin_top = 244.0
-margin_right = 936.0
-margin_bottom = 287.0
+margin_top = 146.0
+margin_right = 468.0
+margin_bottom = 189.0
 
 [node name="VBoxContainer" type="VBoxContainer" parent="CenterContainer/VBoxContainer/Options"]
-margin_left = 362.0
-margin_right = 574.0
+margin_left = 128.0
+margin_right = 340.0
 margin_bottom = 43.0
 
 [node name="CenterContainer" type="CenterContainer" parent="CenterContainer/VBoxContainer/Options/VBoxContainer"]
@@ -139,13 +137,13 @@ custom_fonts/font = SubResource( 4 )
 text = "Options"
 
 [node name="Exit" type="CenterContainer" parent="CenterContainer/VBoxContainer"]
-margin_top = 291.0
-margin_right = 936.0
-margin_bottom = 324.0
+margin_top = 193.0
+margin_right = 468.0
+margin_bottom = 226.0
 
 [node name="VBoxContainer" type="VBoxContainer" parent="CenterContainer/VBoxContainer/Exit"]
-margin_left = 362.0
-margin_right = 574.0
+margin_left = 128.0
+margin_right = 340.0
 margin_bottom = 33.0
 
 [node name="CenterContainer" type="CenterContainer" parent="CenterContainer/VBoxContainer/Exit/VBoxContainer"]
