@@ -4,9 +4,6 @@
 
 extends MarginContainer
 
-const gameStart = preload("res://source/Levels/LevelTemplate.tscn")
-const optionsMenu = preload("res://source/Menus/OptionsMenu.tscn")
-
 onready var selectorStart = $CenterContainer/VBoxContainer/StartGame/VBoxContainer/CenterContainer/HBoxContainer/Selector
 onready var selectorOptions = $CenterContainer/VBoxContainer/Options/VBoxContainer/CenterContainer/HBoxContainer/Selector
 onready var selectorExit = $CenterContainer/VBoxContainer/Exit/VBoxContainer/CenterContainer/HBoxContainer/Selector2
@@ -56,12 +53,10 @@ func checkInput(_activeSelection):
 
 func makeSelection(_activeSelection):
 	if activeSelection == 0:
-		get_parent().add_child(gameStart.instance())
-		queue_free()
+		get_tree().change_scene("res://source/Levels/LevelTemplate.tscn")
 		
 	elif activeSelection == 1:
-		get_parent().add_child(optionsMenu.instance())
-		queue_free()
-	
+		get_tree().change_scene("res://source/Menus/OptionsMenu.tscn")
+		
 	elif activeSelection == 2:
 		get_tree().quit()
