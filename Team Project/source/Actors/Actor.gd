@@ -9,6 +9,8 @@ export var gravity: = 4000.0
 
 var velocity: = Vector2.ZERO
 
+var hitpoints: = 100
+
 
 	
 	
