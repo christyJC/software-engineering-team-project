@@ -3,6 +3,7 @@ extends Actor
 onready var animatedSprite = $animated
 
 func _physics_process(delta: float) -> void:
+	set_health() #updates the players health as the game progresses
 	var direction: = get_direction()
 	velocity = calculate_move_velocity(velocity, direction, speed)
 	velocity = move_and_slide(velocity, FLOOR_NORMAL)
@@ -43,3 +44,11 @@ func calculate_move_velocity(
 	if direction.y == -1.0:
 		new_velocity.y = speed.y * direction.y
 	return new_velocity
+	
+
+
+
+
+# shows the players health in the HUD
+func set_health() -> void:
+	get_node("HUD/Health").set_text("Health: " + str(hitpoints))
