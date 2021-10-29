@@ -2,8 +2,17 @@ extends Actor
 
 onready var animatedSprite = $animated
 
+# item inventory
+onready var inventory = {
+	"potions": 0,
+	"ammo":10,
+	"item":0 
+}
+
+
 func _physics_process(delta: float) -> void:
 	set_health() #updates the players health as the game progresses
+	set_items() # updates items
 	var direction: = get_direction()
 	velocity = calculate_move_velocity(velocity, direction, speed)
 	velocity = move_and_slide(velocity, FLOOR_NORMAL)
@@ -50,6 +59,12 @@ func calculate_move_velocity(
 
 
 
-# shows the players health in the HUD
+# shows the player's health in the HUD
 func set_health() -> void:
 	get_node("HUD/Health").set_text("Health: " + str(hitpoints))
+
+# show the player's items in the HUD
+func set_items() -> void:
+	get_node("HUD/Potion/PotionLabel").set_text("Potions: " + str(inventory["potions"]))
+	get_node("HUD/Ammo/AmmoLabel").set_text("Ammo: " + str(inventory["ammo"]))
+	get_node("HUD/Item/ItemLabel").set_text("Item: " + str(inventory["item"]))
