@@ -56,7 +56,8 @@ animations = [ {
 extents = Vector2( 24, 56 )
 
 [node name="Player" type="KinematicBody2D"]
-collision_mask = 8
+collision_layer = 5
+collision_mask = 4
 script = ExtResource( 2 )
 
 [node name="animated" type="AnimatedSprite" parent="."]
@@ -64,7 +65,7 @@ position = Vector2( 0, -22 )
 scale = Vector2( 0.3, 0.3 )
 frames = SubResource( 1 )
 animation = "idle"
-frame = 4
+frame = 2
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
