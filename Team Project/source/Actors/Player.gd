@@ -9,7 +9,7 @@ func _physics_process(delta: float) -> void:
 	velocity = move_and_slide(velocity, FLOOR_NORMAL)
 	
 	#this is for animation of the character
-	var axisX = Input.get_action_strength("ui_right") - Input.get_action_strength("ui_left")
+	var axisX = Input.get_action_strength("move_right") - Input.get_action_strength("move_left")
 	
 	if axisX > 0: 
 		animatedSprite.animation = "Run"
@@ -17,6 +17,7 @@ func _physics_process(delta: float) -> void:
 	elif axisX < 0:
 		animatedSprite.animation = "Run"
 		animatedSprite.flip_h = true
+	
 	else:
 		animatedSprite.animation = "idle"
 		
