@@ -2,7 +2,7 @@ extends Actor
 
 onready var animatedSprite = $animated
 onready var inventory = {
-	"potions":0,
+	"apple":0,
 	"ammo":10,
 	"item" : "empty"
 }
@@ -17,7 +17,7 @@ func _physics_process(delta: float) -> void:
 	velocity = move_and_slide(velocity, FLOOR_NORMAL)
 	
 	#this is for animation of the character
-	var axisX = Input.get_action_strength("ui_right") - Input.get_action_strength("ui_left")
+	var axisX = Input.get_action_strength("move_right") - Input.get_action_strength("move_left")
 	
 	if axisX > 0: 
 		animatedSprite.animation = "Run"
@@ -63,6 +63,22 @@ func set_health() -> void:
 
 # shows player's items in the HUD
 func set_items() -> void:
-	get_node("HUD/Potions/PotionLabel").set_text("Potions: " + str(inventory["potions"]))
+	get_node("HUD/Apples/AppleLabel").set_text("Apples: " + str(inventory["apple"]))
 	get_node("HUD/Ammo/AmmoLabel").set_text("Ammo: " + str(inventory["ammo"]))
 	get_node("HUD/Item/ItemLabel").set_text("Item: " + inventory["item"])
+
+
+# This method is called when the player walks into an item
+# It does not need to be called on the Player.gd script
+func recieveItem(type,recieved):
+	if type == "apple":
+		inventory["apple"] += recieved
+	elif type == "ammo":
+		inventory["ammo"] += recieved
+	elif type == "item":
+		inventory["item"] = recieved
+	else:
+		print("ERROR: Cannot give player this item/amounts")
+		
+	
+	

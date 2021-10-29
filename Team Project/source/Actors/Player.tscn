@@ -56,8 +56,8 @@ animations = [ {
 extents = Vector2( 24, 56 )
 
 [node name="Player" type="KinematicBody2D"]
-collision_layer = 5
-collision_mask = 4
+collision_layer = 2
+collision_mask = 12
 script = ExtResource( 2 )
 
 [node name="animated" type="AnimatedSprite" parent="."]
@@ -65,7 +65,7 @@ position = Vector2( 0, -22 )
 scale = Vector2( 0.3, 0.3 )
 frames = SubResource( 1 )
 animation = "idle"
-frame = 2
+frame = 5
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
@@ -90,19 +90,19 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Potions" type="Sprite" parent="HUD"]
+[node name="Apples" type="Sprite" parent="HUD"]
 position = Vector2( 37.388, 715.496 )
 scale = Vector2( 0.75, 0.75 )
 texture = ExtResource( 3 )
 
-[node name="PotionLabel" type="Label" parent="HUD/Potions"]
+[node name="AppleLabel" type="Label" parent="HUD/Apples"]
 margin_left = 44.1385
 margin_top = -22.6721
 margin_right = 510.139
 margin_bottom = 100.328
 rect_scale = Vector2( 0.4, 0.4 )
 custom_fonts/font = ExtResource( 33 )
-text = "Potions: "
+text = "Apples: "
 __meta__ = {
 "_edit_use_anchors_": false
 }
