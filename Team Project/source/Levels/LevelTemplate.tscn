@@ -1,8 +1,14 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://source/Levels/Dirtautotile.tres" type="TileSet" id=1]
 [ext_resource path="res://source/Actors/Player.tscn" type="PackedScene" id=2]
 [ext_resource path="res://source/Actors/Enemy.tscn" type="PackedScene" id=3]
+[ext_resource path="res://source/Levels/forest background.png" type="Texture" id=4]
+[ext_resource path="res://icon.png" type="Texture" id=5]
+[ext_resource path="res://source/Levels/Area2D.gd" type="Script" id=6]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 173.707, 141.727 )
 
 [node name="LevelTemplate" type="Node2D"]
 
@@ -16,11 +22,49 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="Player" parent="TileMap" instance=ExtResource( 2 )]
-position = Vector2( 304.625, 163.685 )
-
 [node name="Enemy" parent="." instance=ExtResource( 3 )]
 position = Vector2( 1306.92, 249.6 )
 
 [node name="Enemy2" parent="." instance=ExtResource( 3 )]
 position = Vector2( 2554.81, -258.301 )
+
+[node name="Player" parent="." instance=ExtResource( 2 )]
+position = Vector2( 303.625, 163.685 )
+
+[node name="Camera2D2" type="Camera2D" parent="Player"]
+position = Vector2( 0, -96 )
+current = true
+smoothing_enabled = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="Player/Camera2D2"]
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="Player/Camera2D2/ParallaxBackground"]
+motion_scale = Vector2( 0.5, 0.1 )
+motion_mirroring = Vector2( 1430, 1000 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="sky" type="Sprite" parent="Player/Camera2D2/ParallaxBackground/ParallaxLayer"]
+position = Vector2( -216, -624 )
+scale = Vector2( 1.5, 1.73611 )
+texture = ExtResource( 4 )
+centered = false
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Area2D" type="Area2D" parent="."]
+script = ExtResource( 6 )
+
+[node name="Sprite" type="Sprite" parent="Area2D"]
+position = Vector2( 20508.7, -2731.96 )
+scale = Vector2( 5.70503, 4.95694 )
+texture = ExtResource( 5 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2( 20510.6, -2725.03 )
+shape = SubResource( 1 )
