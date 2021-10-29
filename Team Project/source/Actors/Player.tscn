@@ -64,7 +64,7 @@ position = Vector2( 0, -22 )
 scale = Vector2( 0.3, 0.3 )
 frames = SubResource( 1 )
 animation = "idle"
-frame = 8
+frame = 4
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
@@ -73,11 +73,15 @@ shape = SubResource( 2 )
 
 [node name="HUD" type="CanvasLayer" parent="."]
 
-[node name="Health" type="Label" parent="HUD"]
-margin_left = 15.7144
-margin_top = 15.7145
-margin_right = 397.714
-margin_bottom = 138.714
+[node name="Health" type="Sprite" parent="HUD"]
+position = Vector2( 48.049, 43.7213 )
+texture = ExtResource( 3 )
+
+[node name="HealthLabel" type="Label" parent="HUD/Health"]
+margin_left = 39.3113
+margin_top = -16.3773
+margin_right = 421.311
+margin_bottom = 106.623
 rect_scale = Vector2( 0.3, 0.3 )
 custom_fonts/font = ExtResource( 33 )
 text = "Health:"
@@ -90,7 +94,7 @@ position = Vector2( 37.388, 715.496 )
 scale = Vector2( 0.75, 0.75 )
 texture = ExtResource( 3 )
 
-[node name="Label" type="Label" parent="HUD/Potions"]
+[node name="PotionLabel" type="Label" parent="HUD/Potions"]
 margin_left = 44.1385
 margin_top = -22.6721
 margin_right = 510.139
@@ -103,11 +107,11 @@ __meta__ = {
 }
 
 [node name="Ammo" type="Sprite" parent="HUD"]
-position = Vector2( 917.596, 660.261 )
+position = Vector2( 833, 665 )
 scale = Vector2( 0.75, 0.75 )
 texture = ExtResource( 3 )
 
-[node name="Label" type="Label" parent="HUD/Ammo"]
+[node name="AmmoLabel" type="Label" parent="HUD/Ammo"]
 margin_left = 44.1385
 margin_top = -22.6721
 margin_right = 510.139
@@ -119,12 +123,12 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Potions3" type="Sprite" parent="HUD"]
-position = Vector2( 919.378, 719.06 )
+[node name="Item" type="Sprite" parent="HUD"]
+position = Vector2( 833, 720 )
 scale = Vector2( 0.75, 0.75 )
 texture = ExtResource( 3 )
 
-[node name="Label" type="Label" parent="HUD/Potions3"]
+[node name="ItemLabel" type="Label" parent="HUD/Item"]
 margin_left = 44.1385
 margin_top = -22.6721
 margin_right = 510.139
