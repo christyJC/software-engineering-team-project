@@ -11,4 +11,6 @@ Project description: Have yet to decided on what to do will update soon.
 
 ## Prerequisites
 
-## Run InstructionsS
+## Run Instructions
+just start the game and you can play :D
+
