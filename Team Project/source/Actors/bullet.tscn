@@ -1,6 +1,5 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=3 format=2]
 
-[ext_resource path="res://assets/godot-shooter-platformer-series/assets/bullet.png" type="Texture" id=1]
 [ext_resource path="res://source/Actors/bullet.gd" type="Script" id=2]
 
 [sub_resource type="RectangleShape2D" id=1]
@@ -12,7 +11,6 @@ script = ExtResource( 2 )
 [node name="Sprite" type="Sprite" parent="."]
 position = Vector2( -0.371809, 0.124671 )
 scale = Vector2( 0.0181496, 0.0149787 )
-texture = ExtResource( 1 )
 flip_h = true
 hframes = 2
 
