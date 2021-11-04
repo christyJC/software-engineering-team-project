@@ -12,5 +12,6 @@ func _physics_process(delta: float) -> void:
 		velocity.x *= -1.0
 	velocity.y = move_and_slide(velocity, FLOOR_NORMAL).y
 	
+	# if the enemy's health reaches 0 they disappear
 	if hitpoints == 0:
 		queue_free()
