@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Snow.png-6db92e8c5ef3d7f27ef698fe515fee53.stex"
+path="res://.import/BRB2.png-4ad6cd1360b7c256a92dfdd067abbd64.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://source/Levels/Snow.png"
-dest_files=[ "res://.import/Snow.png-6db92e8c5ef3d7f27ef698fe515fee53.stex" ]
+source_file="res://source/Levels/BRB2.png"
+dest_files=[ "res://.import/BRB2.png-4ad6cd1360b7c256a92dfdd067abbd64.stex" ]
 
 [params]
 
@@ -28,6 +28,7 @@ process/fix_alpha_border=true
 process/premult_alpha=false
 process/HDR_as_SRGB=false
 process/invert_color=false
+process/normal_map_invert_y=false
 stream=false
 size_limit=0
 detect_3d=false
