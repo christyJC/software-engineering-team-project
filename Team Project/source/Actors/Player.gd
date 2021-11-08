@@ -7,10 +7,15 @@ onready var inventory = {
 	"item" : "empty"
 }
 
+# if the player touches the enemy from the side he will lose 10 hitpoints
+func _on_EnemyDetector_body_entered(body):
+	hitpoints -= 10
+
 
 func _physics_process(delta: float) -> void:
 	set_health() #updates the players health as the game progresses
 	set_items() #updates items
+	is_dead() # kills the player if there are 0 hitpoints
 	
 	var direction: = get_direction()
 	velocity = calculate_move_velocity(velocity, direction, speed)
@@ -60,6 +65,12 @@ func calculate_move_velocity(
 # shows the player's health in the HUD
 func set_health() -> void:
 	get_node("HUD/Health/HealthLabel").set_text("Health: " + str(hitpoints))
+	
+
+# gets rid of the player if the player has no hitpoints
+func is_dead() -> void:
+	if hitpoints == 0:
+		queue_free()
 
 # shows player's items in the HUD
 func set_items() -> void:
@@ -82,3 +93,7 @@ func recieveItem(type,recieved):
 		
 	
 	
+
+
+
+
