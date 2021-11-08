@@ -2,7 +2,7 @@
 
 [ext_resource path="res://source/Actors/Player.tscn" type="PackedScene" id=1]
 [ext_resource path="res://source/Levels/Snow.tres" type="TileSet" id=2]
-[ext_resource path="res://assets/snowbackground.png" type="Texture" id=3]
+[ext_resource path="res://source/Levels/snowbackground.png" type="Texture" id=3]
 
 [node name="World2" type="Node2D"]
 

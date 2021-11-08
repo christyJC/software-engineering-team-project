@@ -28,11 +28,11 @@ __meta__ = {
 
 [node name="ParallaxLayer" type="ParallaxLayer" parent="Player/Camera2D2/ParallaxBackground"]
 motion_scale = Vector2( 0.5, 0.1 )
-motion_mirroring = Vector2( 940, 800 )
+motion_mirroring = Vector2( 1620, 800 )
 
 [node name="Cave" type="Sprite" parent="Player/Camera2D2/ParallaxBackground/ParallaxLayer"]
 light_mask = 512
 position = Vector2( -333.616, -564.698 )
-scale = Vector2( 1.5, 1.9398 )
+scale = Vector2( 2.15141, 2.05818 )
 texture = ExtResource( 3 )
 centered = false
