@@ -75,8 +75,7 @@ func is_dead() -> void:
 # shows player's items in the HUD
 func set_items() -> void:
 	get_node("HUD/Apples/AppleLabel").set_text("Apples: " + str(inventory["apple"]))
-	get_node("HUD/Ammo/AmmoLabel").set_text("Ammo: " + str(inventory["ammo"]))
-	get_node("HUD/Item/ItemLabel").set_text("Item: " + inventory["item"])
+	
 
 
 # This method is called when the player walks into an item
