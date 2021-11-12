@@ -6,7 +6,7 @@ Members present: Jake Christy, Bradley Gauthier, Marcos Garcia, Cameron Snoap
 
 Date: November 11, 2021
 
-Time: 6:00pm - 6:50pm
+Time: 6:00pm - 6:20pm
 
 Discussion points: 
 * What tasks have been completed
