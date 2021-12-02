@@ -15,3 +15,7 @@ func _physics_process(delta: float) -> void:
 	# if the enemy's health reaches 0 they disappear
 	if hitpoints == 0:
 		queue_free()
+
+
+func _on_BulletDetector_area_entered(area):
+	hitpoints -= 25

@@ -44,15 +44,15 @@ animations = [ {
 "name": "idle",
 "speed": 10.0
 }, {
-"frames": [ ExtResource( 13 ), ExtResource( 23 ), ExtResource( 9 ), ExtResource( 10 ), ExtResource( 5 ), ExtResource( 11 ), ExtResource( 15 ), ExtResource( 20 ), ExtResource( 21 ), ExtResource( 16 ), ExtResource( 22 ), ExtResource( 18 ) ],
-"loop": true,
-"name": "Jump",
-"speed": 10.0
-}, {
 "frames": [ ExtResource( 17 ), ExtResource( 6 ), ExtResource( 14 ), ExtResource( 4 ), ExtResource( 7 ), ExtResource( 19 ), ExtResource( 12 ), ExtResource( 8 ) ],
 "loop": true,
 "name": "Run",
 "speed": 15.0
+}, {
+"frames": [ ExtResource( 13 ), ExtResource( 23 ), ExtResource( 9 ), ExtResource( 10 ), ExtResource( 5 ), ExtResource( 11 ), ExtResource( 15 ), ExtResource( 20 ), ExtResource( 21 ), ExtResource( 16 ), ExtResource( 22 ), ExtResource( 18 ) ],
+"loop": true,
+"name": "Jump",
+"speed": 10.0
 } ]
 
 [sub_resource type="RectangleShape2D" id=2]
@@ -71,7 +71,6 @@ position = Vector2( 0, -22 )
 scale = Vector2( 0.3, 0.3 )
 frames = SubResource( 1 )
 animation = "idle"
-frame = 3
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
@@ -80,9 +79,9 @@ shape = SubResource( 2 )
 
 [node name="EnemyDetector" type="Area2D" parent="."]
 position = Vector2( 16, -16 )
+monitorable = false
 collision_layer = 0
 collision_mask = 16
-monitorable = false
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="EnemyDetector"]
 modulate = Color( 0.345098, 0.435294, 0.921569, 1 )

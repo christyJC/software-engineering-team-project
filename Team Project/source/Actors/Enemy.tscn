@@ -1,10 +1,13 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://source/Actors/Enemy.gd" type="Script" id=1]
 [ext_resource path="res://assets/enemy.png" type="Texture" id=2]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 42.4864, 41.1792 )
+
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 45, 43 )
 
 [node name="Enemy" type="KinematicBody2D"]
 collision_layer = 16
@@ -24,3 +27,12 @@ position = Vector2( 0, -40 )
 scale = Vector2( 4.025, 3.625 )
 process_parent = true
 physics_process_parent = true
+
+[node name="BulletDetector" type="Area2D" parent="."]
+position = Vector2( 0, -41 )
+collision_layer = 16
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="BulletDetector"]
+shape = SubResource( 2 )
+
+[connection signal="area_entered" from="BulletDetector" to="." method="_on_BulletDetector_area_entered"]
