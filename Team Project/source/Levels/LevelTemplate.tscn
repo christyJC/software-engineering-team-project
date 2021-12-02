@@ -1,9 +1,10 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://source/Levels/Dirtautotile.tres" type="TileSet" id=1]
 [ext_resource path="res://source/Actors/Player.tscn" type="PackedScene" id=2]
 [ext_resource path="res://source/Actors/Enemy.tscn" type="PackedScene" id=3]
 [ext_resource path="res://source/Levels/forest background.png" type="Texture" id=4]
+[ext_resource path="res://source/Levels/Portal.tscn" type="PackedScene" id=5]
 [ext_resource path="res://source/Actors/Apple.tscn" type="PackedScene" id=7]
 
 [node name="LevelTemplate" type="Node2D"]
@@ -61,3 +62,7 @@ position = Vector2( 3434.51, -326.987 )
 
 [node name="Apple5" parent="." instance=ExtResource( 7 )]
 position = Vector2( 4225.27, 121.375 )
+
+[node name="Portal" parent="." instance=ExtResource( 5 )]
+position = Vector2( 20142.9, -2748.83 )
+next_scene_path = "res://source/Levels/snowWorld.tscn"
