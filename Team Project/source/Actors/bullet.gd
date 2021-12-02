@@ -15,9 +15,11 @@ func _physics_process(delta):
 	$sprite.frame = 0
 	set_physics_process(false)
 
+# The bullet disappears when it leaves the camera view
 func _on_VisibilityNotifier2D_screen_exited():
 	queue_free()
 
 
+# The bullet disappears when it and enemy collision shape enters its area
 func _on_Area2D_body_entered(body):
 	queue_free()

@@ -29,6 +29,10 @@ config/icon="res://icon.png"
 window/size/width=1150
 window/size/height=750
 
+[global]
+
+"layer names"=false
+
 [input]
 
 ui_up={
@@ -76,6 +80,7 @@ fire={
 2d_physics/layer_3="World"
 2d_physics/layer_4="Item"
 2d_physics/layer_5="Enemy"
+2d_physics/layer_6="Bullet"
 2d_physics/layer_7="Portal"
 
 [physics]
