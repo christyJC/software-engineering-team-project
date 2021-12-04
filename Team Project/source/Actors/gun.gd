@@ -20,5 +20,5 @@ func _physics_process(delta):
 		bullet_instance.global_position = $Position2D.global_position
 		get_parent().add_child(bullet_instance)
 		can_fire = false			
-		yield(get_tree().create_timer(.5), "timeout")
+		yield(get_tree().create_timer(.15), "timeout")
 		can_fire = true
