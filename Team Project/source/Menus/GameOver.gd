@@ -5,8 +5,8 @@ onready var selectorQuit = $CenterContainer/VBoxContainer/Exit2/VBoxContainer/Ce
 
 var activeSelection = 0
 
-func _ready():
-	setSelection(0)
+func _ready(): # Called at start of scence
+	setSelection(0) # Put cursor at start at first
 
 func _process(delta):
 	if Input.is_action_just_pressed("ui_down"): # When arrow down is pressed
@@ -34,14 +34,14 @@ func setSelection(_activeSelection):
 	elif _activeSelection == 1:
 		selectorQuit.text = ">"
 
-
+# Check for looping (going down when at the bottom / going up while at the top)
 func checkInput(_activeSelection):
 	if activeSelection > 1:
 		activeSelection = 0
 	if activeSelection < 0:
 		activeSelection = 1
 
-
+# Makes a selection, either sending back to first level or leaving the game
 func makeSelection(_activeSelection):
 	if activeSelection == 0:
 		get_tree().change_scene("res://source/Levels/LevelTemplate.tscn")
