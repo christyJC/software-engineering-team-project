@@ -7,6 +7,7 @@ onready var inventory = {
 	"item" : "empty"
 }
 
+
 # if the player touches the enemy from the side he will lose 10 hitpoints
 func _on_EnemyDetector_body_entered(body):
 	hitpoints -= 10
@@ -71,6 +72,7 @@ func set_health() -> void:
 func is_dead() -> void:
 	if hitpoints == 0:
 		queue_free()
+		get_tree().change_scene("res://source/Menus/GameOver.tscn")
 
 # shows player's items in the HUD
 func set_items() -> void:
