@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Balloon Game.mp3-8292606190d536ec13cf0eff521aedd3.mp3str"
+
+[deps]
+
+source_file="res://assets/Balloon Game.mp3"
+dest_files=[ "res://.import/Balloon Game.mp3-8292606190d536ec13cf0eff521aedd3.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

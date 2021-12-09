@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Realistic Gunshot Sound Effect short.mp3-14122e1b6c1f3918ff37955eb5965b6c.mp3str"
+
+[deps]
+
+source_file="res://assets/Realistic Gunshot Sound Effect short.mp3"
+dest_files=[ "res://.import/Realistic Gunshot Sound Effect short.mp3-14122e1b6c1f3918ff37955eb5965b6c.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

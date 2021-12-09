@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Bite sound effect.mp3-326457ac1670d11cebb64554336b4a6f.mp3str"
+
+[deps]
+
+source_file="res://assets/Bite sound effect.mp3"
+dest_files=[ "res://.import/Bite sound effect.mp3-326457ac1670d11cebb64554336b4a6f.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

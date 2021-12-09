@@ -24,6 +24,10 @@ config/name="Team Project"
 run/main_scene="res://source/Menus/StartMenu.tscn"
 config/icon="res://icon.png"
 
+[autoload]
+
+GlobalAudioStreamPlayer="*res://AudioStreamPlayer.tscn"
+
 [display]
 
 window/size/width=1150
