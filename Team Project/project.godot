@@ -20,7 +20,7 @@ _global_script_class_icons={
 
 [application]
 
-config/name="Team Project"
+config/name="Johnny Appleseed's Big Adventure"
 run/main_scene="res://source/Menus/StartMenu.tscn"
 config/icon="res://icon.png"
 
