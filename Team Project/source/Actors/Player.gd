@@ -10,7 +10,12 @@ onready var inventory = {
 
 # if the player touches the enemy from the side he will lose 10 hitpoints
 func _on_EnemyDetector_body_entered(body):
-	hitpoints -= 10
+	if DifficultySetting.difficulty == 'easy':
+		hitpoints -= 10
+	elif DifficultySetting.difficulty == 'medium':
+		hitpoints -= 25
+	elif DifficultySetting.difficulty == 'hard':
+		hitpoints -= 100
 
 
 func _physics_process(delta: float) -> void:

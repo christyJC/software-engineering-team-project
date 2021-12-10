@@ -53,7 +53,7 @@ func setSelection(_activeSelection):
 	# Check what is selected and update selector label
 	if _activeSelection == 0:
 		selectorEasy.text = ">"
-	
+		
 	elif _activeSelection == 1:
 		selectorMedium.text = ">"
 		
@@ -87,7 +87,7 @@ func makeSelection(_activeSelection):
 		DifficultySetting.difficulty = "hard"
 	elif activeSelection == 3:
 		get_tree().change_scene('res://source/Menus/StartMenu.tscn')
-	print(DifficultySetting.difficulty)
+	
 		
 func clearChoices():
 	choiceEasy.text = ""
