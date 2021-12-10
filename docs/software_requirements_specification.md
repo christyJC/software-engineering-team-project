@@ -8,7 +8,11 @@ game that will be created.
 ## Player
 1. The player character shall be able to move left and right.
 2. The player character shall be able to jump.
-3. The player character shall be able to shoot.
+3. The player character shall be aim to aim in 360 degrees.
+4. The player character shall be able to shoot.
+5. Player movement shall be controlled with the keyboard.
+6. Player aim shall be controlled with the mouse.
+
 
 ## Inventory
 1. Player needs to be able to look at the inventory that they currently have and they need to be able to interact with it
@@ -27,13 +31,8 @@ game that will be created.
 4. The main menu shall have a sub-menu to change options.
 
 ## Options Menu
-1. The options menu shall allow the player to mute/unmute audio.
+1. The options menu shall be controlled with the keyboard
 2. The options menu shall allow the player to select the difficulty of the game.
-
-
-## Level Select Menu
-1. The level select menu shall allow the player to choose the level to start at.
-2. The level select menu shall allow the user to return to the main menu.
 
 # Non-functional
 
