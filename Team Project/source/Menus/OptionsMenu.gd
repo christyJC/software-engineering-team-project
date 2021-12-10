@@ -14,11 +14,17 @@ onready var choiceHard = $CenterContainer/VBoxContainer/Exit3/VBoxContainer/Cent
 onready var selectorReturn = $CenterContainer/VBoxContainer/Exit4/VBoxContainer/CenterContainer/HBoxContainer/SelectorReturn
 
 var activeSelection = 0
-var difficulty = "medium"
 
 func _ready(): # Called at start of scence
-	setSelection(0) # Put cursor at start at first
+	if DifficultySetting.difficulty == "easy":
+		activeSelection = 0
+	elif DifficultySetting.difficulty == "medium":
+		activeSelection = 1
+	elif DifficultySetting.difficulty == "hard":
+		activeSelection = 2
+	setSelection(activeSelection) # Put cursor at start at first
 	clearChoices() # Show no difficulty choice
+	makeSelection(activeSelection)
 	# TODO: Make default difficulty "Medium" on game start only
 
 func _process(delta): # This is called every frame
@@ -47,12 +53,16 @@ func setSelection(_activeSelection):
 	# Check what is selected and update selector label
 	if _activeSelection == 0:
 		selectorEasy.text = ">"
+	
 	elif _activeSelection == 1:
 		selectorMedium.text = ">"
+		
 	elif _activeSelection == 2:
 		selectorHard.text = ">"
+
 	elif _activeSelection == 3:
 		selectorReturn.text = ">"
+
 		
 # Check for looping (going down when at the bottom / going up while at the top)
 func checkInput(_activeSelection):
@@ -66,18 +76,19 @@ func makeSelection(_activeSelection):
 	if activeSelection == 0:
 		clearChoices()
 		choiceEasy.text = "<--"
-		
+		DifficultySetting.difficulty = "easy"	
 	elif activeSelection == 1:
 		clearChoices()
 		choiceMedium.text = "<--"
-		
+		DifficultySetting.difficulty = "medium"
 	elif activeSelection == 2:
 		clearChoices()
 		choiceHard.text = "<--"
-		
+		DifficultySetting.difficulty = "hard"
 	elif activeSelection == 3:
 		get_tree().change_scene('res://source/Menus/StartMenu.tscn')
-
+	print(DifficultySetting.difficulty)
+		
 func clearChoices():
 	choiceEasy.text = ""
 	choiceMedium.text = ""
