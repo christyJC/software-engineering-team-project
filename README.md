@@ -28,6 +28,8 @@ This project is a small game made in Godot for CIS350. It is written in GDScipt.
 * ssh -> git@github.com:garciam0415/GVSU-CIS350-TeamWumbo.git
 2. Navigate to the executable folder
 3. Run the 'Team Project.exe'
+* *Note: If you choose to download just the files from the repo you need both the .exe and .pck to run it.*
+* *The 'Team Project.pck' must be in the same directory as the 'Team Project.exe'*
 
 ### Option 2 - importing project
 1. Clone the repository
@@ -44,3 +46,13 @@ This project is a small game made in Godot for CIS350. It is written in GDScipt.
 9. The project will be imported
 10. Select the 2D option in the middle top of Godot
 11. Press F5 or click the play project button in the top right
+
+# Software Artifacts
+These are all of the artifacts created throughout the project. They include diagrams and plans for the project.
+* [Burn up chart](https://github.com/garciam0415/GVSU-CIS350-TeamWumbo/blob/master/docs/Burn%20up%20Chart.pdf)
+* [Task list](https://github.com/garciam0415/GVSU-CIS350-TeamWumbo/blob/master/docs/task_list.md)
+* [Midterm SRS](https://github.com/garciam0415/GVSU-CIS350-TeamWumbo/blob/master/docs/software_requirements_specification.md)
+## Use case diagrams
+* [In-game](https://github.com/garciam0415/GVSU-CIS350-TeamWumbo/blob/master/artifacts/use_case_diagrams/In-Game.pdf)
+* [Menu](https://github.com/garciam0415/GVSU-CIS350-TeamWumbo/blob/master/artifacts/use_case_diagrams/MenuUseCase.pdf)
+* [Options Menu](https://github.com/garciam0415/GVSU-CIS350-TeamWumbo/blob/master/artifacts/use_case_diagrams/usecase_options.pdf)
