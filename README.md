@@ -12,10 +12,10 @@ This project is a small game made in Godot for CIS350. It is written in GDScipt.
 
 ## Team Members and Roles
 
-* [Jake Christy](https://github.com/christyJC/CIS350-HW2-Christy.git)
-* [Marcos Garcia](https://github.com/garciam0415/CIS350-HW2-Garcia.git)
-* [Cameron Snoap](https://github.com/snoapca/CIS350-HW2--Snoap-.git)
-* [Bradley Gauthier](https://github.com/Bradschmad/CIS350-HW2-Gauthier)
+* [Jake Christy](https://github.com/christyJC/CIS350-HW2-Christy.git) - Menus/UI
+* [Marcos Garcia](https://github.com/garciam0415/CIS350-HW2-Garcia.git) - Level Design
+* [Cameron Snoap](https://github.com/snoapca/CIS350-HW2--Snoap-.git) - Player design/sounds 
+* [Bradley Gauthier](https://github.com/Bradschmad/CIS350-HW2-Gauthier) - Player and enemy design
 
 ## Prerequisites
 * Cloning the repo (see option 1 or 2)
